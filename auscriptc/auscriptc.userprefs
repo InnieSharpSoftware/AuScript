@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{3376235F-B924-41DC-AEC6-B56830FA84B5}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.auscriptc PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="auscriptc\Program.cs">
+    <Files>
+      <File FileName="auscriptc\Program.cs" Line="157" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

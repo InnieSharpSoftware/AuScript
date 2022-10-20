@@ -1,0 +1,71 @@
+Printline Text: &&&$var
+Print Text: &&&$var
+Caption Text: &&&$var
+Mathp 14+15=res OR $one+$two=res
+Mathm 14-15=res OR $one-$two=res
+Mathx 14*15=res OR $one*$two=res
+Mathn 14/15=res OR $one/$two=res
+Variable var=$var&&&;
+If var=exit exit
+Pause
+Clear
+Exit
+Set var=Text: 
+To func
+Function func
+Start app.exe OR $app
+Starta app.exe OR $app
+_Logs logs.txt
+Forecolor 0-6 OR $clr
+Backcolor 0-6 OR $clr
+Waitms 1500 OR $time
+Waits 1 OR $time
+Startargs app.exe_"arg" OR $app_$arg
+Startargsa app.exe_"arg" OR $app_$arg
+Readline $path|||var|||$ln    ПЕРВАЯ СТРОКА ЭТО 0
+Writeline $path|||$text|||$ln (if $ln == -1 = new file)
+Crdir $dir OR dir OR Pa&&&th
+Rmdir $dir OR dir OR Pa&&&th
+Moved $from $to
+Movef $from $to
+Copyf $from $to
+Crfil $name
+Rmfil $name
+Addline $path|||$text
+Printlines $path
+Removechars $startchar $endchar var
+Ifstw var=text print
+Kill $name&&&.exe
+#Comment
+Length from to
+Longlength from to
+_Code ver
+Process var $proc
+Admin runas *return true *run as admin* or false
+File $file exists
+Directory $dir exists
+Shutdown
+Restart
+Sleep
+Keyseta var=$text   НЕ ТИХИЙ
+Keysete var=$text   ТИХИЙ
+Randomd double
+Randomi integer
+Messagebox $text|||$name|||$theme(dark/light)|||320(width)x180(height)
+Inputbox $text|||$name|||$theme(dark/light)|||320(width)x180(height)|||var
+Choosebox $name|||$theme(dark/light)|||320(width)x180(height)|||var|||$pathtolist
+Datef datefull
+Dates datesimple
+Timef timefull
+Times timesimple
+Substring $startchar $endchar var
+----------------------------НЕ РАБОТАЕТ начало
+Desktopoff
+Allappsoff
+Controlpanoff
+CADoff
+Cursoroff
+Milionfolders
+Systemdelete
+----------------------------КОНЕЦ
+Indexof $symbol from=to
