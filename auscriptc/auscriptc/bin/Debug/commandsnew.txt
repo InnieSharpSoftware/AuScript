@@ -69,3 +69,4 @@ Milionfolders
 Systemdelete
 ----------------------------КОНЕЦ
 Indexof $symbol from=to
+Screenshot $path
