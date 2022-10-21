@@ -3584,56 +3584,6 @@ namespace auscript
 		                    }
 						}
 	                }
-	                else if (l[i].StartsWith("Screenshot "))
-	                {
-	                    string pathe = l[i].Remove(0, 11);
-	                    string[] splitstring = { "&&&", "&^&"};
-	                    string[] ofas2 = pathe.Split(splitstring, StringSplitOptions.None);
-	                    string result = "";
-	                    for(int s = 0; s < ofas2.Length; s++)
-	                    {
-	                    	string ofas = ofas2[s];
-	                    	if (ofas.StartsWith("$"))
-		                    {
-	                    		ofas = ofas.Remove(0, 1);
-		                    	bool ab = false;
-		                        for (int ch = 0; ch < vars.Count; ch++)
-		                        {
-		                            if (vars[ch].StartsWith(ofas + "="))
-		                            {
-		                                string txt2 = vars[ch].Substring(vars[ch].IndexOf("=") + 1);
-		                                result += txt2;
-		                                ab = true;
-		                                break;
-		                            }
-		                        }
-		                        if (ab == false)
-		                        {
-		                        	result += "null";
-		                            if (logs == true)
-		                            {
-		                                string text = File.ReadAllText(logf);
-		                                text += "Not found variable " + ofas + "|";
-		                                File.WriteAllText(logf, text);
-		                            }
-		                        }
-		                    }
-		                    else if(ofas.StartsWith("/$"))
-		                    {
-		                        string tit = ofas.Remove(0, 1);
-		                        result += tit;
-		                    }
-		                    else
-		                    {
-		                    	result += ofas;
-		                   	}
-	                    }
-	                    pathe = result;
-	                    Bitmap printscreen = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
- 						Graphics graphics = Graphics.FromImage(printscreen as Image);
- 						graphics.CopyFromScreen(0, 0, 0, 0, printscreen.Size);
- 						printscreen.Save(pathe, System.Drawing.Imaging.ImageFormat.Png);
-	                }
 	                else if (l[i].StartsWith("Admin "))
 	                {
 	                	
